@@ -15,5 +15,5 @@ WORKDIR /app
 
 
 
-COPY --from=MAVEN_BUILD /build/target/docker*.jar /app/
-CMD ["java", "-jar", "docker*.jar"]
+COPY --from=MAVEN_BUILD /build/target/docker.jar /app/
+CMD ["java", "-jar", "docker.jar"]
